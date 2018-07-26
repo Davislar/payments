@@ -1,0 +1,29 @@
+{
+    "name": "davislar/payments",
+    "description": "Payment library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Nogenko",
+            "email": "nogenkoworkmail@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "autoload": {
+        "files": ["src/functions_include.php"],
+        "psr-4": {
+            "Davislar\\Payments\\": "src/",
+            "Davislar\\Payments\\Config\\": "src/config",
+            "Davislar\\Payments\\PayPal\\": "src/paypal"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Davislar\\Payments\\Tests\\": "tests/"
+        }
+    },
+}
