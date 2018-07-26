@@ -14,9 +14,10 @@
         "guzzlehttp/guzzle": "^6.3@dev"
     },
     "autoload": {
-        "files": ["src/functions_include.php"],
         "psr-4": {
             "Davislar\\Payments\\": "src/",
+            "Davislar\\Payments\\Interfaces\\": "src/interfaces",
+            "Davislar\\Payments\\Exceptions\\": "src/exceptions",
             "Davislar\\Payments\\Config\\": "src/config",
             "Davislar\\Payments\\PayPal\\": "src/paypal"
         }
@@ -25,5 +26,5 @@
         "psr-4": {
             "Davislar\\Payments\\Tests\\": "tests/"
         }
-    },
+    }
 }
